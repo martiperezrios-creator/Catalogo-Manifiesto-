@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catálogo interactivo de cafés Manifiesto." />
+    <title>Manifiesto — Catálogo de cafés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=44" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand header-brand" href="#catalogo" aria-label="Manifiesto, café">
+        <img src="assets/brand/manifiesto-logo-sharp.png" alt="Manifiesto" />
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#catalogo">Café</a>
+        <a href="#complementos">Extras</a>
+        <a href="#accesorios">Accesorios</a>
+        <a href="#historia">Nuestra esencia</a>
+      </nav>
+      <a class="header-cta" href="#catalogo">Explorar cafés <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="catalog" id="catalogo">
+        <div class="catalog-heading">
+          <div>
+            <p class="eyebrow">NUESTRA SELECCIÓN</p>
+            <h2>Encontrá tu café</h2>
+          </div>
+          <p class="catalog-count"><span id="product-count">17</span> variedades</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar y navegar el catálogo">
+          <button class="filter active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter" type="button" data-filter="espresso" aria-pressed="false">Espressos</button>
+          <button class="filter" type="button" data-filter="filtrado" aria-pressed="false">Filtrados</button>
+          <a class="filter-link" href="#complementos">Extras</a>
+          <a class="filter-link" href="#accesorios">Accesorios</a>
+        </div>
+
+        <div class="subfilters" id="coffee-subfilters" role="group" aria-label="Filtrar cafés por perfil de sabor" aria-hidden="true" hidden>
+          <span>Perfil</span>
+          <button class="subfilter active" type="button" data-profile="todos" aria-pressed="true">Todos</button>
+          <button class="subfilter" type="button" data-profile="clasicos" aria-pressed="false">Clásicos y chocolatosos</button>
+          <button class="subfilter" type="button" data-profile="frutales" aria-pressed="false">Frutales y dulces</button>
+          <button class="subfilter" type="button" data-profile="balanceados" aria-pressed="false">Balanceados</button>
+          <button class="subfilter" type="button" data-profile="complejos" aria-pressed="false">Complejos</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="complements" id="complementos">
+        <div class="complements-heading">
+          <div>
+            <p class="eyebrow">COMPLEMENTOS</p>
+            <h2>Extras</h2>
+          </div>
+          <p>Para ampliar la carta y acompañar cada preparación.</p>
+        </div>
+
+        <div class="complements-grid" id="extras-grid" aria-label="Extras"></div>
+      </section>
+
+      <section class="accessories" id="accesorios">
+        <div class="accessories-heading">
+          <div>
+            <h2>Accesorios</h2>
+          </div>
+        </div>
+        <div class="accessories-grid" id="accessories-grid" aria-label="Accesorios"></div>
+      </section>
+
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">CAFÉ DE ESPECIALIDAD · BUENOS AIRES</p>
+          <h1>ESTO ES<br />MANIFIESTO<br />X EL CAFÉ</h1>
+          <p class="hero-description">Tostamos lo nuestro. Formamos personas. Acompañamos negocios. Creamos comunidad. Desde el grano hasta la taza. Porque lo que manifestamos es una forma de vivir el café. Con compromiso, con calidad y con propósito.</p>
+          <a class="text-link" href="#catalogo">Descubrir la colección <span>→</span></a>
+        </div>
+        <article class="roastery-panel">
+          <div class="roastery-image">
+            <img src="assets/editorial/foto-grano-verde.png" alt="Granos de café verde seleccionados por Manifiesto" />
+          </div>
+          <div class="roastery-copy">
+            <p class="eyebrow">MANIFIESTO · CAFÉ DE ESPECIALIDAD</p>
+            <p class="roastery-lead">Tostar café no es solo técnica.</p>
+            <p class="roastery-lead">Es entender el grano, el origen y a quién lo va a tomar.</p>
+            <p>Nuestro tostadero es el corazón de Manifiesto. Es donde el café cobra vida y se define su carácter. Seleccionamos granos de calidad de todo el mundo, trabajamos con métodos precisos y tostamos cada lote con la atención que se merece.</p>
+            <p>Nuestros perfiles de tueste están pensados para resaltar lo mejor de cada origen. Porque creemos y trabajamos por un café rico y de calidad.</p>
+            <p>Todos los días, desde nuestro tostadero, llevamos granos de café a más de 100 cafeterías y hogares.</p>
+            <div class="roastery-details">
+              <p><strong>Roseti 2075, Villa Ortúzar</strong></p>
+              <p>Lunes a Viernes: 08:00 a 16:00hs</p>
+            </div>
+            <div class="roastery-links">
+              <a href="https://manifiestocafe.com.ar/guia-de-compra" target="_blank" rel="noopener noreferrer"><span>Conocé nuestros granos</span><span aria-hidden="true">→</span></a>
+              <a href="https://api.whatsapp.com/send?phone=541131546888&amp;text=%C2%A1Hola!%20Quer%C3%ADa%20hacer%20una%20consulta%20a%20trav%C3%A9s%20de%20la%20web%20de%20Manifiesto%20Caf%C3%A9." target="_blank" rel="noopener noreferrer"><span>Quiero granos para mi cafetería</span><span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="intro" id="historia">
+        <p class="section-number">01</p>
+        <h2>Café para quienes eligen<br />con intención.</h2>
+        <p>Seleccionamos perfiles diversos, desde expresos intensos hasta filtrados delicados. Cada bolsa guarda una geografía, un proceso y una forma distinta de disfrutar el café.</p>
+      </section>
+
+      <section class="closing">
+        <img class="closing-logo" src="assets/brand/manifiesto-logo-sharp.png" alt="Manifiesto" />
+        <p class="eyebrow">CAFÉ DE ESPECIALIDAD · BUENOS AIRES</p>
+        <h2>ESTO ES<br />MANIFIESTO<br /><em>X EL CAFÉ</em></h2>
+        <p class="closing-description">Tostamos lo nuestro. Formamos personas. Acompañamos negocios. Creamos comunidad. Desde el grano hasta la taza. Porque lo que manifestamos es una forma de vivir el café. Con compromiso, con calidad y con propósito.</p>
+        <a href="#catalogo">Volver al café ↑</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer-brand" href="#inicio" aria-label="Manifiesto">
+        <img src="assets/brand/manifiesto-logo-sharp.png" alt="Manifiesto" />
+      </a>
+      <p>Café de especialidad</p>
+      <p>Buenos Aires · Argentina</p>
+    </footer>
+
+  <script src="app.js?v=47"></script>
+  </body>
+</html>
