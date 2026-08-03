@@ -293,6 +293,30 @@ h1 { font-size: clamp(3rem, 4.8vw, 5.7rem); line-height: .88; }
   letter-spacing: .08em;
   white-space: nowrap;
 }
+.suggested-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+  margin-top: .52rem;
+  padding: .5rem .58rem .45rem;
+  border: 1px solid rgba(30,28,25,.12);
+  border-radius: 999px;
+  background: rgba(255,255,255,.42);
+}
+.suggested-price span {
+  font-size: .5rem;
+  color: rgba(30,28,25,.58);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  line-height: 1.1;
+}
+.suggested-price strong {
+  font-family: "NeurialMedium", "DM Sans", sans-serif;
+  font-size: .78rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
 
 .accessories { padding: clamp(5rem, 8vw, 8rem) 3.5vw; background: #d8c6ae; border-top: 1px solid var(--line); }
 .accessories-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 3rem; }

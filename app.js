@@ -1,19 +1,19 @@
 const products = [
-  { name: "Brasil Bourbon", image: "assets/final-catalog/cafe-estetica-grande/BRASIL BOURBON.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$36.000" },
-  { name: "Brasil Sertao", image: "assets/final-catalog/cafe-estetica-grande/BRASIL SERTAO.png", methods: ["espresso"], profile: "clasicos", price250: "$15.000", price1000: "$40.000" },
-  { name: "Colombia Descafeinado", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA DESCAFEINADO.png", methods: ["espresso", "filtrado"], profile: "clasicos", price250: "$15.000", price1000: "$42.000" },
-  { name: "Colombia Geisha Natural", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA GEISHA NATURAL.png", methods: ["filtrado"], profile: "complejos", price250: "$19.000", price1000: "$65.000" },
-  { name: "Colombia La Esmeralda", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA LA ESMERALDA.png", methods: ["espresso", "filtrado"], profile: "complejos", price250: "$19.000", price1000: "$65.000" },
-  { name: "Colombia Pasión", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA PASION.png", methods: ["filtrado"], profile: "frutales", price250: "$19.000" },
-  { name: "Colombia Rio Blanco", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA RIO BLANCO.png", methods: ["espresso", "filtrado"], profile: "complejos", price250: "$20.000" },
-  { name: "Colombia Huila", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA HUILA.png", methods: ["espresso", "filtrado"], profile: "balanceados", price250: "$15.000", price1000: "$42.000" },
-  { name: "Etiopia Nancebo", image: "assets/final-catalog/cafe-estetica-grande/ETIOPIA NANCEBO.png", methods: ["filtrado"], profile: "frutales", price250: "$19.000" },
-  { name: "Honduras Piedra Habladora", image: "assets/final-catalog/cafe-estetica-grande/HONDURAS PIEDRA HABLADORA.png", methods: ["espresso"], profile: "clasicos", price250: "$15.000", price1000: "$40.000" },
-  { name: "Indonesia Sunda Badak", image: "assets/final-catalog/cafe-estetica-grande/INDONESIA SUNDA BADAK.png", methods: ["filtrado"], profile: "complejos", price250: "$15.000", price1000: "$74.900" },
-  { name: "Manifiesto Blend I", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND I.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$40.000" },
-  { name: "Manifiesto Blend II", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND II.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$36.000" },
-  { name: "Perú Caracolillo", image: "assets/final-catalog/cafe-estetica-grande/PERU CARACOLILLO.png", methods: ["filtrado"], profile: "balanceados", price250: "$19.000", price1000: "$36.000" },
-  { name: "Tanzania Luwi", image: "assets/final-catalog/cafe-estetica-grande/TANZANIA LUWI.png", methods: ["filtrado"], profile: "frutales", price250: "$15.000", price1000: "$44.000" }
+  { name: "Brasil Bourbon", image: "assets/final-catalog/cafe-estetica-grande/BRASIL BOURBON.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$38.000", suggested250: "$23.900" },
+  { name: "Brasil Sertao", image: "assets/final-catalog/cafe-estetica-grande/BRASIL SERTAO.png", methods: ["espresso"], profile: "clasicos", price250: "$15.000", price1000: "$42.000", suggested250: "$27.900" },
+  { name: "Colombia Descafeinado", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA DESCAFEINADO.png", methods: ["espresso", "filtrado"], profile: "clasicos", price250: "$16.000", price1000: "$50.000", suggested250: "$29.900" },
+  { name: "Colombia Geisha Natural", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA GEISHA NATURAL.png", methods: ["filtrado"], profile: "complejos", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" },
+  { name: "Colombia La Esmeralda", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA LA ESMERALDA.png", methods: ["espresso", "filtrado"], profile: "complejos", price250: "$17.000", price1000: "$55.000", suggested250: "$32.900" },
+  { name: "Colombia Pasión", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA PASION.png", methods: ["filtrado"], profile: "frutales", price250: "$15.000", price1000: "$45.000", suggested250: "$27.900" },
+  { name: "Colombia Rio Blanco", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA RIO BLANCO.png", methods: ["espresso", "filtrado"], profile: "complejos", price250: "$17.000", price1000: "$55.000", suggested250: "$32.900" },
+  { name: "Colombia Huila", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA HUILA.png", methods: ["espresso", "filtrado"], profile: "balanceados", price250: "$14.000", price1000: "$45.000", suggested250: "$25.900" },
+  { name: "Etiopia Nancebo", image: "assets/final-catalog/cafe-estetica-grande/ETIOPIA NANCEBO.png", methods: ["filtrado"], profile: "frutales", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" },
+  { name: "Honduras Piedra Habladora", image: "assets/final-catalog/cafe-estetica-grande/HONDURAS PIEDRA HABLADORA.png", methods: ["espresso"], profile: "clasicos", price250: "$14.000", price1000: "$42.000", suggested250: "$25.900" },
+  { name: "Indonesia Sunda Badak", image: "assets/final-catalog/cafe-estetica-grande/INDONESIA SUNDA BADAK.png", methods: ["filtrado"], profile: "complejos", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" },
+  { name: "Manifiesto Blend I", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND I.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$40.000", suggested250: "$25.900" },
+  { name: "Manifiesto Blend II", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND II.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$38.000", suggested250: "$25.900" },
+  { name: "Perú Caracolillo", image: "assets/final-catalog/cafe-estetica-grande/PERU CARACOLILLO.png", methods: ["filtrado"], profile: "balanceados", price250: "$14.000", price1000: "$38.000", suggested250: "$25.900" },
+  { name: "Tanzania Luwi", image: "assets/final-catalog/cafe-estetica-grande/TANZANIA LUWI.png", methods: ["filtrado"], profile: "frutales", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" }
 ];
 
 const extras = [
@@ -114,6 +114,10 @@ function render() {
         <span><small>250 g</small><strong>${product.price250}</strong></span>
         <span><small>1 kg</small><strong>${product.price1000 || "Consultar"}</strong></span>
         <em>+ IVA</em>
+      </div>
+      <div class="suggested-price" aria-label="Precio sugerido para cuarto">
+        <span>Precio sugerido 250 g</span>
+        <strong>${product.suggested250 || "Consultar"}</strong>
       </div>
     </article>
   `).join("");
