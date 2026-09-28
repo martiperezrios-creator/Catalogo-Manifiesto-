@@ -2,27 +2,29 @@ const products = [
   { name: "Brasil Bourbon", image: "assets/final-catalog/cafe-estetica-grande/BRASIL BOURBON.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$38.000", suggested250: "$23.900" },
   { name: "Brasil Sertao", image: "assets/final-catalog/cafe-estetica-grande/BRASIL SERTAO.png", methods: ["espresso"], profile: "clasicos", price250: "$15.000", price1000: "$42.000", suggested250: "$27.900" },
   { name: "Colombia Descafeinado", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA DESCAFEINADO.png", methods: ["espresso", "filtrado"], profile: "clasicos", price250: "$16.000", price1000: "$50.000", suggested250: "$29.900" },
-  { name: "Colombia Geisha Natural", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA GEISHA NATURAL.png", methods: ["filtrado"], profile: "complejos", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" },
   { name: "Colombia La Esmeralda", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA LA ESMERALDA.png", methods: ["espresso", "filtrado"], profile: "complejos", price250: "$17.000", price1000: "$55.000", suggested250: "$32.900" },
   { name: "Colombia Pasión", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA PASION.png", methods: ["filtrado"], profile: "frutales", price250: "$15.000", price1000: "$45.000", suggested250: "$27.900" },
   { name: "Colombia Rio Blanco", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA RIO BLANCO.png", methods: ["espresso", "filtrado"], profile: "complejos", price250: "$17.000", price1000: "$55.000", suggested250: "$32.900" },
   { name: "Colombia Huila", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA HUILA.png", methods: ["espresso", "filtrado"], profile: "balanceados", price250: "$14.000", price1000: "$45.000", suggested250: "$25.900" },
+  { name: "Colombia Santander", image: "assets/final-catalog/cafe-estetica-grande/COLOMBIA SANTANDER V2.png", methods: ["espresso", "filtrado"], profile: "balanceados", price250: "$14.000", price1000: "$45.000", suggested250: "$25.900" },
   { name: "Etiopia Nancebo", image: "assets/final-catalog/cafe-estetica-grande/ETIOPIA NANCEBO.png", methods: ["filtrado"], profile: "frutales", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" },
   { name: "Honduras Piedra Habladora", image: "assets/final-catalog/cafe-estetica-grande/HONDURAS PIEDRA HABLADORA.png", methods: ["espresso"], profile: "clasicos", price250: "$14.000", price1000: "$42.000", suggested250: "$25.900" },
   { name: "Indonesia Sunda Badak", image: "assets/final-catalog/cafe-estetica-grande/INDONESIA SUNDA BADAK.png", methods: ["filtrado"], profile: "complejos", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" },
-  { name: "Manifiesto Blend I", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND I.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$40.000", suggested250: "$25.900" },
+  { name: "Manifiesto Blend I", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND I.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$42.000", suggested250: "$25.900" },
   { name: "Manifiesto Blend II", image: "assets/final-catalog/cafe-estetica-grande/MANIFIESTO BLEND II.png", methods: ["espresso"], profile: "clasicos", price250: "$13.000", price1000: "$38.000", suggested250: "$25.900" },
-  { name: "Perú Caracolillo", image: "assets/final-catalog/cafe-estetica-grande/PERU CARACOLILLO.png", methods: ["filtrado"], profile: "balanceados", price250: "$14.000", price1000: "$38.000", suggested250: "$25.900" },
-  { name: "Tanzania Luwi", image: "assets/final-catalog/cafe-estetica-grande/TANZANIA LUWI.png", methods: ["filtrado"], profile: "frutales", price250: "$18.000", price1000: "$60.000", suggested250: "$35.900" }
+  { name: "Perú Caracolillo", image: "assets/final-catalog/cafe-estetica-grande/PERU CARACOLILLO.png", methods: ["filtrado"], profile: "balanceados", price250: "$14.000", price1000: "$38.000", suggested250: "$25.900" }
 ];
 
 const extras = [
-  { name: "Azúcar", image: "assets/final-catalog/EXTRAS AZUCAR.png", description: "Sobres individuales", priceLabel: "Por 1000 unidades", price: "$33.178" },
+  { name: "Azúcar", image: "assets/final-catalog/EXTRAS AZUCAR.png", description: "Sobres individuales", priceLabel: "Por 1000 unidades", price: "$36.865,50" },
+  { name: "Azúcar rubia", image: "assets/final-catalog/EXTRAS AZUCAR.png", description: "Sobres individuales", priceLabel: "Por 800 sobres", price: "$24.000" },
   { name: "Edulcorante", image: "assets/final-catalog/EXTRAS EDULCORANTE.png", description: "Bajas calorías", priceLabel: "Por 400 unidades", price: "$7.650" },
-  { name: "Matcha Atypico", image: "assets/final-catalog/EXTRAS MATCHA ATYPICO.png", description: "Pack 50 g", priceLabel: "Por 50 g", price: "$18.000" },
-  { name: "Leche de Almendras Amande", image: "assets/final-catalog/EXTRAS AMND LANE.png", description: "Bebida de almendras", price: "$32.202", className: "extra-amande" },
-  { name: "Oatly", image: "assets/final-catalog/EXTRAS OATLY.jpg", description: "Bebida vegetal", price: "$49.090", className: "extra-oatly" },
-  { name: "Water Coffee", image: "assets/final-catalog/EXTRAS WATER COFFEE.jpg", description: "Agua para café" },
+  { name: "Matcha Atypico", image: "assets/final-catalog/EXTRAS MATCHA ATYPICO.png", description: "Pack 50 g", priceLabel: "Por 50 g", price: "$16.200" },
+  { name: "Leche de Almendras Amande", image: "assets/final-catalog/EXTRAS AMND LANE.png", description: "Bebida de almendras", price: "$41.848", className: "extra-amande" },
+  { name: "Leche de Almendras Amande Liviana", image: "assets/final-catalog/EXTRAS AMANDE LIVIANA.png", description: "Bebida de almendras liviana", price: "$35.128", className: "extra-amande extra-amande-liviana" },
+  { name: "Oatly", image: "assets/final-catalog/EXTRAS OATLY.jpg", description: "Bebida vegetal", price: "$52.326", className: "extra-oatly" },
+  { name: "Water Coffee", image: "assets/final-catalog/EXTRAS WATER COFFEE.jpg", description: "Agua para café", price: "$12.396,70" },
+  { name: "Drip Bag", image: "assets/final-catalog/EXTRAS DRIP BAG.png", description: "Colombia o Brasil · Pack x5", price: "$8.690" },
   { name: "Rinza", image: "assets/final-catalog/EXTRAS RINZA.png", description: "Limpieza de máquina", price: "$51.595", className: "extra-cleaning" },
   { name: "Cafiza", image: "assets/final-catalog/EXTRAS CAFIZA.png", description: "Limpieza de espresso", price: "$38.530", className: "extra-cleaning extra-cafiza" },
   { name: "Grindz", image: "assets/final-catalog/EXTRAS GRINDZ.png", description: "Limpieza de molino", price: "$75.196", className: "extra-cleaning" },
@@ -30,13 +32,18 @@ const extras = [
   { name: "Filtros Chemex", image: "assets/final-catalog/EXTRAS FILTROS CHEMEX.jpg", description: "Filtros de papel", price: "$46.860" },
   { name: "Filtros Aeropress", image: "assets/final-catalog/EXTRAS FILTROS AEROPRESS 3D.png", description: "Filtros de papel", price: "$20.082" },
   { name: "Dripper de Vidrio", image: "assets/final-catalog/EXTRAS DOMESTIC DRIPPER.png", description: "Domestic Bloom", price: "$29.008" },
-  { name: "Coffee Server", image: "assets/final-catalog/EXTRAS DOMESTIC COFFEE SERVER.png", description: "Domestic Bloom", price: "$18.967" }
+  { name: "Coffee Server", image: "assets/final-catalog/EXTRAS DOMESTIC COFFEE SERVER.png", description: "Domestic Bloom", price: "$18.967" },
+  { name: "Cafetera Kaffa", image: "assets/final-catalog/EXTRAS CAFETERA KAFFA.png", description: "Cafetera de filtrado", price: "$20.661" }
 ];
 
 const accessories = [
   { name: "Pitcher", image: "assets/final-catalog/ACCESORIOS PITCHER 12 OZ.png", description: "Dos tamaños disponibles", priceLines: [{ label: "12 oz", price: "$14.132" }, { label: "20 oz", price: "$19.356" }] },
   { name: "Silicon Mat", image: "assets/final-catalog/ACCESORIOS SILICON MAT.jpeg", description: "Accesorio barista", price: "$21.000" },
-  { name: "Tamper", image: "assets/final-catalog/ACCESORIOS TAMPER.png", description: "Accesorio barista", price: "$50.000" }
+  { name: "Tamper", image: "assets/final-catalog/ACCESORIOS TAMPER.png", description: "Accesorio barista", price: "$50.000" },
+  { name: "Cepillo de grupo", image: "assets/final-catalog/ACCESORIOS CEPILLO DE GRUPO.png", description: "Limpieza de máquina espresso", price: "$15.562" },
+  { name: "Filtro ciego", image: "assets/final-catalog/ACCESORIOS FILTRO CIEGO.png", description: "Limpieza de máquina espresso", price: "$5.712" },
+  { name: "Pincel de barista", image: "assets/final-catalog/ACCESORIOS PINCEL DE BARISTA.png", description: "Herramienta de precisión", price: "$12.500" },
+  { name: "Esponja de grupo", image: "assets/final-catalog/ACCESORIOS ESPONJA DE GRUPO.png", description: "Limpieza de máquina espresso", price: "$21.089" }
 ];
 
 const grid = document.querySelector("#product-grid");

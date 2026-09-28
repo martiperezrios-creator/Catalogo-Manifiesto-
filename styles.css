@@ -191,6 +191,8 @@ h1 { font-size: clamp(3rem, 4.8vw, 5.7rem); line-height: .88; }
   align-items: center;
   gap: .45rem;
   margin: 0 0 1.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
 .subfilters[hidden] { display: none; }
 .subfilters > span {
@@ -249,13 +251,14 @@ h1 { font-size: clamp(3rem, 4.8vw, 5.7rem); line-height: .88; }
 }
 .product-card:hover .card-image img { transform: scale(1.025); }
 .card-index { position: absolute; top: .55rem; left: .55rem; font-size: .52rem; background: var(--paper); padding: .3rem .4rem; }
-.card-info { display: flex; justify-content: space-between; gap: .6rem; padding-top: .72rem; border-top: 1px solid var(--line); margin-top: .7rem; min-height: 5.4rem; }
+.card-info { display: flex; justify-content: space-between; gap: .6rem; padding-top: .72rem; margin-top: .7rem; min-height: 4.7rem; }
 .card-info h3 { margin: 0; font-family: "NeurialMedium", "DM Sans", sans-serif; font-size: clamp(.92rem, .95vw, 1.02rem); line-height: 1.08; font-weight: 500; }
 .card-info p { margin: .3rem 0 0; font-size: .52rem; color: rgba(30,28,25,.6); text-transform: uppercase; letter-spacing: .07em; }
 .card-info small {
   display: inline-flex;
   width: fit-content;
   margin-top: .38rem;
+  margin-bottom: .8rem;
   border: 1px solid currentColor;
   border-radius: 99px;
   padding: .26rem .42rem .22rem;
@@ -271,7 +274,7 @@ h1 { font-size: clamp(3rem, 4.8vw, 5.7rem); line-height: .88; }
 .profile-balanceados .card-info small { color: var(--profile-balanced); background: rgba(208, 107, 47, .14); }
 .profile-complejos .card-info small { color: var(--profile-complex); background: rgba(107, 76, 143, .14); }
 .card-arrow { font-size: .8rem; }
-.card-prices { position: relative; display: grid; grid-template-columns: 1fr 1fr auto; gap: .35rem .55rem; align-items: end; margin-top: auto; padding-top: .72rem; border-top: 1px solid var(--line); }
+.card-prices { position: relative; display: grid; grid-template-columns: 1fr 1fr auto; gap: .35rem .55rem; align-items: end; margin-top: auto; padding-top: .72rem; }
 .card-prices span { display: flex; flex-direction: column; gap: .12rem; }
 .card-prices small { font-size: .5rem; color: rgba(30,28,25,.6); text-transform: uppercase; letter-spacing: .08em; }
 .card-prices strong { font-family: "NeurialMedium", "DM Sans", sans-serif; font-size: .82rem; font-weight: 500; }
@@ -428,6 +431,8 @@ h1 { font-size: clamp(3rem, 4.8vw, 5.7rem); line-height: .88; }
   transform: scale(1.12);
 }
 .extra-amande:hover .complement-image img { transform: scale(1.14); }
+.extra-amande-liviana .complement-image img { transform: scale(.98); }
+.extra-amande-liviana:hover .complement-image img { transform: scale(1); }
 .extra-oatly .complement-image img {
   object-fit: contain;
   object-position: center 48%;
@@ -622,11 +627,14 @@ footer { min-height: 140px; display: grid; grid-template-columns: 1fr auto auto;
   }
   .subfilters {
     gap: .4rem;
-    margin-bottom: 1.25rem;
+    margin: .85rem 0 1.35rem;
+    padding-top: 1rem;
+    justify-content: center;
   }
   .subfilters > span {
     width: 100%;
-    margin: 0 0 .1rem;
+    margin: 0 0 .15rem;
+    text-align: center;
   }
   .subfilter {
     padding: .5rem .7rem;
@@ -640,21 +648,37 @@ footer { min-height: 140px; display: grid; grid-template-columns: 1fr auto auto;
   }
   .card-image { border-radius: 2px; }
   .card-info {
-    min-height: auto;
+    min-height: 4.9rem;
     padding-top: .8rem;
+    padding-bottom: .35rem;
     margin-top: .7rem;
+    align-items: flex-start;
   }
   .card-info h3 { font-size: 1.35rem; }
   .card-info p { font-size: .62rem; }
   .card-info small { font-size: .56rem; padding: .32rem .5rem .28rem; }
   .card-prices {
-    grid-template-columns: 1fr 1fr auto;
-    gap: .45rem;
-    padding-top: .8rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    gap: .42rem;
+    padding-top: .38rem;
+    align-items: end;
   }
-  .card-prices small { font-size: .55rem; }
-  .card-prices strong { font-size: .95rem; }
-  .card-prices em,
+  .card-prices small { font-size: .5rem; }
+  .card-prices strong { font-size: .86rem; }
+  .card-prices em {
+    grid-column: auto;
+    justify-self: end;
+    margin-top: 0;
+  }
+  .suggested-price {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .6rem;
+    padding: .54rem .62rem .48rem;
+    border-radius: 14px;
+  }
+  .suggested-price span { font-size: .52rem; }
+  .suggested-price strong { font-size: .9rem; }
   .item-prices em {
     font-size: .42rem;
     padding: .12rem .24rem .1rem;
